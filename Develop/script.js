@@ -1,35 +1,27 @@
 // Assignment Code, this code targets the generate id
 var generateBtn = document.querySelector("#generate");
-var numbers = [1,2,3,4,5,6,7,8,9,0];
-var symbols = ["@", "%", "$", "#"];
-var characterCodes = Array.from(Array(26)).map( (_, i) => i + 97);
-var lowercaseLetters = characterCodes.map(code => String.fromCharCode(code));
-var uppercaseLetters = lowercaseLetters.map(letter => letter.toUpperCase());
+
+var lowercaseChar = "abcdefghijklmnopqrstuvwxyz";
+var uppercaseChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numericalChar = "0123456789";
+var specialChar = "!$%^&*+-";
 
 
 
 
 
-function generatePassword(length, hasNumbers, hasSymbols, hasLowecase, hasUppercase) =>{
-  var availableCharacters = [
-    ...(hasSymbols ? symbols : []),
-    ...(hasNumbers ? numbers : []),
-    ...(hasUppercase ? uppercaseLetters : []),
-    ...(hasLowercase ? lowercaseLetters : []),
-  ]
+function generatePassword() {
+
+  prompt('Choose a password length between 8 and 128 characters');
+  console.log(answer);
 
 
-  prompt('How many characters would you like the password to be?');
-
-  prompt('Should we include lowercase, uppercase, numeric and/or special characters?');
+// Prompt the user, ensure the user input is valid, display the password
 
 
 
 
-
-
-
-  return "Generated password will go there!";
+  return password;
 }
 
 // Write password to the #password input, this code targets the password id
