@@ -17,7 +17,13 @@ function generatePassword() {
   var passwordlength = prompt("Choose a password length between 8-128 characters.")
   passwordlength = parseInt(passwordlength);
 
+  if (passwordlength < 8) {
+    alert("Password must have more than 7 characters");
+    return "";
+  }
+
   
+
 }
 
 // Write password to the #password input, this code targets the password id
