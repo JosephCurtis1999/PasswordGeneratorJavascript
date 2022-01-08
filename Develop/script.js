@@ -10,7 +10,13 @@ var uppercaseLetters = lowercaseLetters.map(letter => letter.toUpperCase());
 
 
 
-function generatePassword() {
+function generatePassword(length, hasNumbers, hasSymbols, hasLowecase, hasUppercase) =>{
+  var availableCharacters = [
+    ...(hasSymbols ? symbols : []),
+    ...(hasNumbers ? numbers : []),
+    ...(hasUppercase ? uppercaseLetters : []),
+    ...(hasLowercase ? lowercaseLetters : []),
+  ]
 
 
   prompt('How many characters would you like the password to be?');
