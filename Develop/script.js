@@ -12,16 +12,12 @@ var specialChar = "!$%^&*+-";
 
 function generatePassword() {
 
-  prompt('Choose a password length between 8 and 128 characters');
-  console.log(answer);
+  var password = "";
+  var passwordChar = "";
+  var passwordlength = prompt("Choose a password length between 8-128 characters.")
+  passwordlength = parseInt(passwordlength);
 
-
-// Prompt the user, ensure the user input is valid, display the password
-
-
-
-
-  return password;
+  
 }
 
 // Write password to the #password input, this code targets the password id
