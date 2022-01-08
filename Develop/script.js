@@ -22,7 +22,12 @@ function generatePassword() {
     return "";
   }
 
-  
+  if (passwordlength > 128) {
+    alert("Password must not have more than 128 characters");
+    return "";
+  }
+
+
 
 }
 
