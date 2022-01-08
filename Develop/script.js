@@ -39,6 +39,14 @@ function generatePassword() {
     passwordChar += uppercaseChar;
   }
 
+  var numericalCharacters = confirm("Add numbers to your password?");
+
+  if (numericalCharacters) {
+    passwordChar += numericalChar;
+
+  
+  }
+
 
 }
 
