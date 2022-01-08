@@ -27,13 +27,13 @@ function generatePassword() {
     return "";
   }
 
-  var lowercaseCharacters = confirm("Add lowercase characters?");
+  var lowercaseCharacters = confirm("Add lowercase characters to your password?");
 
   if (lowercaseCharacters) {
     passwordChar += lowercaseChar;
   }
 
-  var uppercaseCharacters = confirm("Add uppercase characters?");
+  var uppercaseCharacters = confirm("Add uppercase characters to your password?");
 
   if (uppercaseCharacters) {
     passwordChar += uppercaseChar;
@@ -44,8 +44,18 @@ function generatePassword() {
   if (numericalCharacters) {
     passwordChar += numericalChar;
 
-  
+  var specialCharacters = confirm("Add special characters to your password?");
   }
+
+  if (specialCharacters) {
+    passwordChar += specialChar;
+  }
+
+  for (var i = 0; i < passwordlength; i++) {
+    password += passwordChar[Math.floor(Math.random() * passwordChar.length)];
+  }
+
+  return password;
 
 
 }
