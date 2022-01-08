@@ -1,6 +1,7 @@
 // Assignment Code, this code targets the generate id
 var generateBtn = document.querySelector("#generate");
 
+// defined the variables for the password
 var lowercaseChar = "abcdefghijklmnopqrstuvwxyz";
 var uppercaseChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numericalChar = "0123456789";
@@ -9,7 +10,7 @@ var specialChar = "!$%^&*+-";
 
 
 
-
+// added the generate password function, without this function a password will not be generated
 function generatePassword() {
 
   var password = "";
