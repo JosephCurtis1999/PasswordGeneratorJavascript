@@ -14,7 +14,7 @@ function generatePassword() {
 
   var password = "";
   var passwordChar = "";
-  var passwordlength = prompt("Choose a password length between 8-128 characters.")
+  var passwordlength = prompt("Choose a password length between 8-128 characters.");
   passwordlength = parseInt(passwordlength);
 
   if (passwordlength < 8) {
@@ -25,6 +25,12 @@ function generatePassword() {
   if (passwordlength > 128) {
     alert("Password must not have more than 128 characters");
     return "";
+  }
+
+  var lowercaseCharacters = confirm("Add lowercase characters?");
+
+  if (lowercaseCharacters) {
+    passwordChar += lowercaseChar;
   }
 
 
