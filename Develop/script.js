@@ -33,6 +33,11 @@ function generatePassword() {
     passwordChar += lowercaseChar;
   }
 
+  var uppercaseCharacters = confirm("Add uppercase characters?");
+
+  if (uppercaseCharacters) {
+    passwordChar += uppercaseChar;
+  }
 
 
 }
